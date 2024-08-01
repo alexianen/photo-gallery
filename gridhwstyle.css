@@ -1,0 +1,131 @@
+body {
+    padding-top: 20px;
+}
+
+.parent {
+    display: grid;
+    border: 7px solid #6d6464;
+    padding: 100px;
+    gap: 10px;
+    width: 1100px;
+    grid-template-areas: 
+    'one one one one one one one one two four four five five five'
+    'one one one one one one one one six seven seven eight eight eight'
+    'one one one one one one one one six seven seven nine nine nine'
+    'one one one one one one one one ten seven seven nine nine nine'
+    'eleven eleven eleven eleven eleven eleven twelve twelve twelve twelve twelve thirteen thirteen thirteen'
+    'eleven eleven eleven eleven eleven eleven twelve twelve twelve twelve twelve thirteen thirteen thirteen'
+    'eleven eleven eleven eleven eleven eleven twelve twelve twelve twelve twelve thirteen thirteen thirteen'    
+    ;    
+} 
+
+.child {
+    padding: 0;
+    color: #fff;
+    font-size: 30px;
+   
+}
+
+.child img {
+    height: 100%;
+    width: 100%;
+}
+
+.text {    
+    text-align: center;
+    color: black;
+    position: relative;
+    bottom: 50px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.child img:hover {
+    opacity: 0.3;
+    background-color: black;  
+    transition: all 0.25s ease;
+    visibility: visible;
+}
+
+.child .text  {
+    visibility: hidden;  
+}
+
+.child:hover .text  { 
+    visibility: visible; 
+    transition: all 0.25s ease;
+}
+
+
+.mediumtext {
+    font-size: 16px;
+    margin: 0;
+}
+
+.largetext {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.ten {
+    grid-area: ten;
+}
+
+.eleven {
+    grid-area: eleven;
+}
+
+.twelve {
+    grid-area: twelve;
+}
+
+.thirteen {
+    grid-area: thirteen;
+}
+
+.fourteen {
+    grid-area: fourteen;
+}
+
+.fifteen {
+    grid-area: fifteen;
+}
